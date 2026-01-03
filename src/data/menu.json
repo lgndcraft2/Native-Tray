@@ -1,0 +1,57 @@
+{
+    "starters": [
+        {
+            "id": "s1",
+            "name": "Peppered Snails",
+            "description": "Spicy giant land snails sautéed in pepper sauce.",
+            "price": "₦5,000",
+            "image": "/images/menu/snails.jpg"
+        },
+        {
+            "id": "s2",
+            "name": "Chicken Wings",
+            "description": "Grilled or fried chicken wings in sticky bbq sauce.",
+            "price": "₦4,500",
+            "image": "/images/menu/wings.jpg"
+        }
+    ],
+    "mains": [
+        {
+            "id": "m1",
+            "name": "Jollof Rice & Chicken",
+            "description": "Classic Nigerian smoky Jollof rice served with grilled chicken.",
+            "price": "₦6,500",
+            "image": "/images/menu/jollof.jpg"
+        },
+        {
+            "id": "m2",
+            "name": "Fisherman Soup",
+            "description": "Rich seafood soup with fresh fish, prawns, and crabs, served with swallow of choice.",
+            "price": "₦12,000",
+            "image": "/images/menu/fisherman.jpg"
+        },
+        {
+            "id": "m3",
+            "name": "Native Tray Special",
+            "description": "Assorted native delicacies served in a traditional wooden tray.",
+            "price": "₦25,000",
+            "image": "/images/menu/tray.jpg"
+        }
+    ],
+    "drinks": [
+        {
+            "id": "d1",
+            "name": "Palm Wine",
+            "description": "Freshly tapped palm wine.",
+            "price": "₦2,000",
+            "image": "/images/menu/palmwine.jpg"
+        },
+        {
+            "id": "d2",
+            "name": "Chapman",
+            "description": "Fruity mocktail with cucumber and bitters.",
+            "price": "₦3,500",
+            "image": "/images/menu/chapman.jpg"
+        }
+    ]
+}

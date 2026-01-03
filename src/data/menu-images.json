@@ -1,0 +1,44 @@
+{
+    "lagos": {
+        "food": [
+            "/Lagos-Food-Menu-01@400x-scaled.png",
+            "/Lagos-Food-Menu-02@400x-scaled.png",
+            "/Lagos-Food-Menu-03@400x-scaled.png",
+            "/Lagos-Food-Menu-04@400x-scaled.png",
+            "/Lagos-Food-Menu-05@400x-scaled.png",
+            "/Lagos-Food-Menu-06@400x-scaled.png"
+        ],
+        "drinks": [
+            "/Lagos-Drink-Menu-01@400x-scaled.png",
+            "/Lagos-Drink-Menu-02@400x-scaled.png",
+            "/Lagos-Drink-Menu-03@400x-scaled.png"
+        ]
+    },
+    "phc": {
+        "food": [
+            "/PHC-Food-Menu-01@400x-scaled.png",
+            "/PHC-Food-Menu-02@400x-scaled.png",
+            "/PHC-Food-Menu-03@400x-scaled.png",
+            "/PHC-Food-Menu-04@400x-scaled.png",
+            "/PHC-Food-Menu-05@400x-scaled.png",
+            "/PHC-Food-Menu-06@400x-scaled.png"
+        ],
+        "drinks": [
+            "/PHC-Drink-Menu-01@400x-scaled.png",
+            "/PHC-Drink-MEnu-02@400x-scaled.png",
+            "/PHC-Drink-MEnu-03@400x-scaled.png"
+        ]
+    },
+    "ojiji": {
+        "food": [
+            "/Ojiji-Food-Menu-01@400x-scaled.png",
+            "/Ojiji-Food-Menu-02@400x-scaled.png",
+            "/Ojiji-Food-Menu-03@400x-scaled.png"
+        ],
+        "drinks": [
+            "/PHC-Drink-Menu-01@400x-scaled.png",
+            "/PHC-Drink-MEnu-02@400x-scaled.png",
+            "/PHC-Drink-MEnu-03@400x-scaled.png"
+        ]
+    }
+}

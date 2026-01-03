@@ -1,0 +1,47 @@
+[
+    {
+        "id": "e1",
+        "title": "Highlife Celebration",
+        "date": "Every Wednesday",
+        "time": "7:00 PM",
+        "location": "Lekki Branch",
+        "description": "Experience the vibrant rhythms of Highlife music.",
+        "image": "https://images.unsplash.com/photo-1543900694-133f37dbd5a4?auto=format&fit=crop&q=80&w=1000"
+    },
+    {
+        "id": "e2",
+        "title": "Karaoke Night",
+        "date": "Every Thursday",
+        "time": "7:00 PM",
+        "location": "Lekki Branch",
+        "description": "Sing your heart out with friends and family.",
+        "image": "https://images.unsplash.com/photo-1516280440614-6697288d5d38?auto=format&fit=crop&q=80&w=1000"
+    },
+    {
+        "id": "e3",
+        "title": "African Dance Class & DJ Special",
+        "date": "Every Friday",
+        "time": "6:00 PM",
+        "location": "Lekki Branch",
+        "description": "Learn African dance moves followed by a special DJ set.",
+        "image": "https://images.unsplash.com/photo-1545128485-c400e7702796?auto=format&fit=crop&q=80&w=1000"
+    },
+    {
+        "id": "e4",
+        "title": "Live Band",
+        "date": "Every Sunday",
+        "time": "6:00 PM",
+        "location": "Lekki Branch",
+        "description": "Relax with soothing live band performances.",
+        "image": "https://images.unsplash.com/photo-1501612780327-45045538702b?auto=format&fit=crop&q=80&w=1000"
+    },
+    {
+        "id": "e5",
+        "title": "Game Day",
+        "date": "Last Saturday of the Month",
+        "time": "12:00 PM",
+        "location": "Lekki Branch",
+        "description": "Fun games and activities for everyone.",
+        "image": "https://images.unsplash.com/photo-1554068865-2484cd13263c?auto=format&fit=crop&q=80&w=1000"
+    }
+]

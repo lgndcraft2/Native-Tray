@@ -1,0 +1,26 @@
+[
+    {
+        "id": "lekki",
+        "name": "Lekki Branch",
+        "address": "19 Admiralty Way, Opp Delakes Mall, Lekki Phase 1, Lagos",
+        "phone": "+234 818 555 0000",
+        "image": "/images/locations/lekki.jpg",
+        "slug": "lekki"
+    },
+    {
+        "id": "phc-gra",
+        "name": "PHC GRA Branch",
+        "address": "Bimkol Crescent, behind Divinity House, off woji road, GRA Phase 2, PHC 50 Nkpogu road, by Nkpogu Jxn, PHC",
+        "phone": "+234 809 182 0000 +234 809 172 0000",
+        "image": "/images/locations/phc-gra.jpg",
+        "slug": "phc-gra"
+    },
+    {
+        "id": "phc-ojiji",
+        "name": "PHC - Ojiji Branch",
+        "address": "Ojiji Place, 50 Transamadi Road, Nkpogu, Port Harcourt",
+        "phone": "+234 800 000 0002",
+        "image": "/images/locations/phc-ojiji.jpg",
+        "slug": "phc-ojiji"
+    }
+]
