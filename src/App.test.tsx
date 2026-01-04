@@ -17,7 +17,7 @@ describe('App', () => {
             </HelmetProvider>
         );
 
-        expect(screen.getByText('Native Tray', { selector: 'a' })).toBeInTheDocument();
+        expect(screen.getAllByText('Native Tray').length).toBeGreaterThan(0);
         expect(screen.getByText(/cultural stories/i)).toBeInTheDocument();
     });
 });

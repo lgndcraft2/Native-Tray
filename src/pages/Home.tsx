@@ -10,7 +10,7 @@ const Home: React.FC = () => {
         <>
             <SEO title="Home" />
             {/* Hero Section */}
-            <div className="relative flex min-h-[80vh] items-center justify-center bg-stone-900 text-center text-white">
+            <div className="relative flex min-h-[90vh] items-center justify-center bg-stone-900 text-center text-white">
                 <div className="absolute inset-0 overflow-hidden">
                     <div className="absolute inset-0 bg-black/60 z-10" />
                     <img
@@ -47,7 +47,7 @@ const Home: React.FC = () => {
                         <p className="text-lg text-stone-600">
                             Experience the authentic flavors of our heritage. From smoky Jollof Rice to rich Fisherman Soup, every dish is a story waiting to be told.
                         </p>
-                        <Link to="/about">
+                        <Link to="/about" className="inline-block">
                             <Button variant="secondary" className="gap-2">
                                 Our Story <ArrowRight className="h-4 w-4" />
                             </Button>
@@ -55,7 +55,7 @@ const Home: React.FC = () => {
                     </div>
                     <div className="rounded-lg overflow-hidden shadow-xl">
                         <img
-                            src="https://images.unsplash.com/photo-1590650516494-0c8e4a4dd67e?q=80&w=2071&auto=format&fit=crop"
+                            src="https://images.unsplash.com/photo-1543364195-077a16c30ff3?q=80&w=2000&auto=format&fit=crop"
                             alt="Traditional Dining"
                             className="w-full h-full object-cover"
                         />
@@ -73,9 +73,9 @@ const Home: React.FC = () => {
                 </div>
                 <div className="grid gap-8 md:grid-cols-3">
                     {[
-                        { name: "Lekki Branch", address: "Lekki Phase 1, Lagos" },
-                        { name: "PHC GRA Branch", address: "GRA Phase 2, Port Harcourt" },
-                        { name: "PHC - Ojiji Branch", address: "Ojiji Road, Port Harcourt" }
+                        { name: "Lekki Branch", address: "19 Admiralty Way, Opp Delakes Mall, Lekki Phase 1, Lagos" },
+                        { name: "PHC GRA Branch", address: "Bimkol Crescent, behind Divinity House, off woji road, GRA Phase 2, Port Harcourt" },
+                        { name: "PHC - Ojiji Branch", address: "Ojiji Place, 50 Transamadi Road, Nkpogu, Port Harcourt" }
                     ].map((loc, idx) => (
                         <div key={idx} className="bg-stone-50 p-6 rounded-lg text-center border border-stone-100 shadow-sm hover:shadow-md transition-shadow">
                             <MapPin className="h-8 w-8 text-primary mx-auto mb-4" />

@@ -8,7 +8,7 @@ const About: React.FC = () => {
                 <div className="absolute inset-0 overflow-hidden">
                     <div className="absolute inset-0 bg-black/60 z-10" />
                     <img
-                        src="https://images.unsplash.com/photo-1590650176854-a78b598d9333?q=80&w=2072&auto=format&fit=crop"
+                        src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=2070&auto=format&fit=crop"
                         alt="African Culture"
                         className="h-full w-full object-cover"
                     />

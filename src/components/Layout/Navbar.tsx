@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
-import { Link, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
-import Button from '../UI/Button';
 
 const Navbar: React.FC = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -22,9 +21,9 @@ const Navbar: React.FC = () => {
         <nav className="sticky top-0 z-50 w-full border-b border-stone-200 bg-white/80 backdrop-blur-md">
             <div className="container mx-auto px-4 md:px-6">
                 <div className="flex h-16 items-center justify-between">
-                    <Link to="/" className="flex items-center gap-2 font-bold text-xl md:text-2xl text-primary tracking-tighter">
+                    <div className="flex items-center gap-2 font-bold text-xl md:text-2xl text-primary tracking-tighter cursor-default">
                         Native Tray
-                    </Link>
+                    </div>
 
                     {/* Desktop Nav */}
                     <div className="hidden md:flex items-center gap-6">
@@ -40,9 +39,7 @@ const Navbar: React.FC = () => {
                                 {link.name}
                             </NavLink>
                         ))}
-                        <Link to="/menu">
-                            <Button size="sm">Order Now</Button>
-                        </Link>
+
                     </div>
 
                     {/* Mobile Menu Button */}
@@ -69,9 +66,7 @@ const Navbar: React.FC = () => {
                                 {link.name}
                             </NavLink>
                         ))}
-                        <Link to="/menu" onClick={() => setIsOpen(false)}>
-                            <Button className="w-full">Order Now</Button>
-                        </Link>
+
                     </div>
                 </div>
             )}

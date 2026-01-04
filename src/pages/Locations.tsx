@@ -22,7 +22,7 @@ const Locations: React.FC = () => {
                             <div className="h-48 bg-stone-200 relative">
                                 {/* Placeholder for map or location image */}
                                 <img
-                                    src={`https://images.unsplash.com/photo-1555396273-367ea4eb4db5?q=80&w=1000&auto=format&fit=crop`}
+                                    src={location.image}
                                     alt={location.name}
                                     className="w-full h-full object-cover"
                                 />
@@ -43,7 +43,7 @@ const Locations: React.FC = () => {
                                     <div className="flex items-start gap-3 text-stone-600">
                                         <Clock className="h-5 w-5 text-primary shrink-0 mt-0.5" />
                                         <div>
-                                            <p>Daily: 8:00 AM - 10:00 PM</p>
+                                            <p>Daily: 10:00 AM - 10:00 PM</p>
                                         </div>
                                     </div>
                                 </div>
@@ -56,7 +56,14 @@ const Locations: React.FC = () => {
                                     >
                                         <Button variant="outline" className="w-full">View Menu</Button>
                                     </Link>
-                                    <Button className="flex-1">Get Directions</Button>
+                                    <a
+                                        href={location.mapUrl}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="flex-1"
+                                    >
+                                        <Button className="w-full">Get Directions</Button>
+                                    </a>
                                 </div>
                             </div>
                         </div>

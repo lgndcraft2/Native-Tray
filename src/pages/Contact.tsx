@@ -15,13 +15,28 @@ const Contact: React.FC = () => {
         e.preventDefault();
         setStatus('submitting');
 
-        // Simulate API call
-        console.log('Form Submitted:', formData);
-        await new Promise(resolve => setTimeout(resolve, 1000));
+        try {
+            const response = await fetch("https://formspree.io/f/mvzgwljj", {
+                method: "POST",
+                body: JSON.stringify(formData),
+                headers: {
+                    'Accept': 'application/json',
+                    'Content-Type': 'application/json'
+                }
+            });
 
-        setStatus('success');
-        setFormData({ name: '', email: '', message: '' });
-        setTimeout(() => setStatus('idle'), 3000);
+            if (response.ok) {
+                setStatus('success');
+                setFormData({ name: '', email: '', message: '' });
+                setTimeout(() => setStatus('idle'), 5000);
+            } else {
+                alert("Oops! There was a problem submitting your form");
+                setStatus('idle');
+            }
+        } catch (error) {
+            alert("Oops! There was a problem submitting your form");
+            setStatus('idle');
+        }
     };
 
     return (
@@ -40,7 +55,7 @@ const Contact: React.FC = () => {
                             </div>
                             <div>
                                 <h3 className="font-bold text-lg mb-1">Email Us</h3>
-                                <p className="text-stone-600">hello@nativetray.com</p>
+                                <p className="text-stone-600">dine@nativetray.com</p>
                             </div>
                         </div>
                         <div className="flex items-start gap-4">
@@ -49,7 +64,7 @@ const Contact: React.FC = () => {
                             </div>
                             <div>
                                 <h3 className="font-bold text-lg mb-1">Call Us</h3>
-                                <p className="text-stone-600">+234 800 000 0000</p>
+                                <p className="text-stone-600">+234 818 555 0000</p>
                             </div>
                         </div>
                         <div className="flex items-start gap-4">
@@ -58,7 +73,7 @@ const Contact: React.FC = () => {
                             </div>
                             <div>
                                 <h3 className="font-bold text-lg mb-1">Visit HQ</h3>
-                                <p className="text-stone-600">Lekki Phase 1, Lagos, Nigeria</p>
+                                <p className="text-stone-600">19 Admiralty Way, Opp Delakes Mall, Lekki Phase 1, Lagos</p>
                             </div>
                         </div>
                     </div>
@@ -71,6 +86,7 @@ const Contact: React.FC = () => {
                             <input
                                 type="text"
                                 id="name"
+                                name="name"
                                 required
                                 value={formData.name}
                                 onChange={e => setFormData({ ...formData, name: e.target.value })}
@@ -82,6 +98,7 @@ const Contact: React.FC = () => {
                             <input
                                 type="email"
                                 id="email"
+                                name="email"
                                 required
                                 value={formData.email}
                                 onChange={e => setFormData({ ...formData, email: e.target.value })}
@@ -92,6 +109,7 @@ const Contact: React.FC = () => {
                             <label htmlFor="message" className="block text-sm font-medium text-stone-700 mb-1">Message</label>
                             <textarea
                                 id="message"
+                                name="message"
                                 required
                                 rows={4}
                                 value={formData.message}
