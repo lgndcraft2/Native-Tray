@@ -22,6 +22,7 @@ const Navbar: React.FC = () => {
             <div className="container mx-auto px-4 md:px-6">
                 <div className="flex h-16 items-center justify-between">
                     <div className="flex items-center gap-2 font-bold text-xl md:text-2xl text-primary tracking-tighter cursor-default">
+                        <img src="/logo-small.png" alt="Native Tray Logo" className="h-10 w-auto" />
                         Native Tray
                     </div>
 

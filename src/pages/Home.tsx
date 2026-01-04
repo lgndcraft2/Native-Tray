@@ -12,14 +12,15 @@ const Home: React.FC = () => {
             {/* Hero Section */}
             <div className="relative flex min-h-[90vh] items-center justify-center bg-stone-900 text-center text-white">
                 <div className="absolute inset-0 overflow-hidden">
-                    <div className="absolute inset-0 bg-black/60 z-10" />
+                    <div className="absolute inset-0 bg-black/85 z-10" />
                     <img
                         src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=2070&auto=format&fit=crop"
                         alt="Delicious African Food"
                         className="h-full w-full object-cover"
                     />
                 </div>
-                <div className="relative z-20 container mx-auto px-4">
+                <div className="relative z-20 container mx-auto px-4 flex flex-col items-center">
+                    <img src="/logo-small.png" alt="Native Tray Logo" className="h-24 w-auto mb-6" />
                     <h1 className="mb-6 text-5xl font-bold tracking-tight md:text-7xl font-serif">
                         Eat <span className="text-primary">Native</span>.
                     </h1>
